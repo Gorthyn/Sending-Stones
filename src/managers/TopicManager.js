@@ -38,12 +38,18 @@ export const deleteTopic = (topicId) => {
 }
 
 export const updateTopic = (topic) => {
-    return fetch(`http://localhost:8000/topic/${topic.id}`, {
+    let topicCopy = {...topic};
+
+    if (typeof topicCopy.game === 'object' && topicCopy.game !== null) {
+        topicCopy.game = topicCopy.game.id;
+    }
+
+    return fetch(`http://localhost:8000/topic/${topicCopy.id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
             "Authorization": `Token ${localStorage.getItem("ss_token")}`
         },
-        body: JSON.stringify(topic)
+        body: JSON.stringify(topicCopy)
     })
 }

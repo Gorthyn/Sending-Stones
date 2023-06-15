@@ -15,7 +15,7 @@ export const NavBar = () => {
             <li className="navbar__item">
                 Trackers
             </li>
-            <li className="navbar__item">
+            <li className="navbar__item" onClick={() => navigate("/invitations")}>
                 Invitations
             </li>
             <li className="navbar__item">

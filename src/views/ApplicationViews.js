@@ -15,6 +15,8 @@ import { GameEditForm } from "../components/games/GameEditForm"
 import { TopicEditForm } from "../components/topics/TopicEditForm"
 import { PostEditForm } from "../components/posts/PostEditForm"
 import { CommentEditForm } from "../components/comments/CommentEditForm"
+import { InvitationForm } from "../components/invitations/InvitationForm"
+import { InvitationList } from "../components/invitations/InvitationList"
 
 export const ApplicationViews = () => {
     return <>
@@ -34,6 +36,8 @@ export const ApplicationViews = () => {
             <Route path="/post/:postId" element={<PostDetails />} />
             <Route path="/post/:postId/edit" element={<PostEditForm />} />
             <Route path="/topic/:topicId/post/new" element={<PostForm />} />
+            <Route path="/game/:gameId/playerinvite" element={<InvitationForm />} />
+            <Route path="/invitations" element={<InvitationList />} />
             <Route element={<Authorized />}>
                 {/* Add Routes here */}
             </Route>

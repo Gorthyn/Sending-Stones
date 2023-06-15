@@ -54,7 +54,7 @@ export const GameDetails = () => {
             </ul>
             <section className="action__buttons_container">
                 <button className="action__button" onClick={() => navigate(`/game/${game.id}/topic/new`)}>New Topic</button>
-                <button className="action__button" onClick={() => navigate(`/game/${gameId}/players`)}>Players</button>
+                <button className="action__button" onClick={() => navigate(`/game/${gameId}/playerinvite`)}>Invite Players</button>
             </section>
         </section>
         </article>
