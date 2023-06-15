@@ -1,0 +1,138 @@
+body {
+    background-color: #000033; /* almost black blue */
+    color: #FFFFFF; /* white text */
+}
+
+.add__home_games {
+    background-color: #000063; /* dark navy blue */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.games {
+    background-color: #000063; /* dark navy blue */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.add__games_button, .action__button {
+    background-color: #5d5d85; /* lilac */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add__games_button:hover, .action__button:hover {
+    background-color: #C8A2C8; /* a bit darker lilac on hover */
+}
+
+.game {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: #000033; /* almost black blue, same as the body background */
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2); /* This adds a bit of shadow for a "card" like effect */
+}
+
+.game__header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.game__description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.action__buttons_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game__title {
+    font-size: 22px; /* Increase font size */
+    color: #F5F5F5; /* Change color */
+    cursor: pointer; /* Change the mouse cursor when hovering over the title */
+}
+
+.game__title:hover {
+    color: #C8A2C8; /* Change color to lilac when hovered */
+}
+
+/* Container for the form */
+.form__container {
+    background-color: #000063; /* dark navy blue */
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+    margin: 10px auto; /* Reduced the top and bottom margin */
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
+    color: #FFFFFF; /* white text */
+    text-align: center; /* Center align the text */
+}
+
+/* Styles for the form itself */
+form {
+    display: flex;
+    flex-direction: column; /* This will make the form fields stack vertically */
+    align-items: center;
+    width: 94%; /* Adjust as needed */
+    padding: 20px;
+    background-color: #000063; /* dark navy blue */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2); /* This adds a bit of shadow for a "card" like effect */
+}
+
+/* Styles for the labels */
+form label {
+    font-size: 24px; /* Adjust as needed */
+    font-weight: bold;
+    color: #FFFFFF; /* white text */
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center; /* Center align the label text */
+}
+
+/* Styles for the input fields */
+form input[type="text"], form textarea {
+    width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Center align the form fields */
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Styles for the textarea */
+form textarea {
+    height: 150px; /* Adjust as needed */
+}
+
+/* Styles for the submit button */
+form input[type="submit"] {
+    background-color: #5d5d85; /* lilac */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Center align the button */
+}
+
+form input[type="submit"]:hover {
+    background-color: #C8A2C8; /* a bit darker lilac on hover */
+}

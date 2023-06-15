@@ -1,10 +1,44 @@
 .navbar {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: left;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
 }
 
 .navbar__item {
-    flex-basis: 20%;
     list-style-type: none;
+    cursor: pointer;
+}
+
+.navbar__item:hover {
+    color: #C8A2C8;
+}
+
+.navbar__logo {
+    max-width: 5%;
+    height: auto;
+    display: flex; /* Ensures logo keeps its space */
+    align-items: center; /* Centers logo vertically */
+    justify-content: center; /* Centers logo horizontally */
+}
+
+.navbar__logo img {
+    width: 100%; /* Make the image width responsive to the link size */
+    height: auto; /* Keep the aspect ratio of the image */
+}
+
+.nav-item {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.nav-link, .fakeLink {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .fakeLink:hover {
+    color: #C8A2C8;
 }

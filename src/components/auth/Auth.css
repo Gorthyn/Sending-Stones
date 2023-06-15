@@ -49,7 +49,7 @@ fieldset {
 .form--login {
     background-size: cover;
     background-position-x: center;
-    background-image: url('./logo.png');
+    background-image: url('https://assetsio.reedpopcdn.com/epic-encounters-local-legends-concept-art-inn.png?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp');
     z-index: 1;
     min-height: 25rem;
     min-width: 45rem;

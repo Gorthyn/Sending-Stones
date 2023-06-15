@@ -1,0 +1,83 @@
+.dice-roller {
+    background-color: #000063;
+    padding: 20px;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+  
+  .dice-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .dice-button {
+    background-color: #5d5d85;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dice-button:hover {
+    background-color: #c8a2c8;
+  }
+  
+  .selected {
+    background-color: #c8a2c8;
+  }
+  
+  .roll-animation-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dice-animation {
+    font-size: 24px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #000033;
+  }
+  
+  .roll-button,
+  .clear-button {
+    background-color: #5d5d85;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .roll-button:hover,
+  .clear-button:hover {
+    background-color: #c8a2c8;
+  }
+  
+  .roll-results {
+    text-align: center;
+  }
+  
+  .roll-results > div {
+    margin-bottom: 5px;
+  }
+  

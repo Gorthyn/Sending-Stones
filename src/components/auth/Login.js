@@ -17,15 +17,17 @@ export const Login = () => {
             password: password.current.value
         }
         loginUser(user)
-            .then(res => {
-                if ("valid" in res && res.valid && "token" in res) {
-                    localStorage.setItem("lu_token", res.token)
-                    navigate("/")
-                }
-                else {
-                    invalidDialog.current.showModal()
-                }
-            })
+        .then(res => {
+            console.log(res);  // log the response to see its structure
+            if ("valid" in res && res.valid && "token" in res) {
+                localStorage.setItem("ss_token", res.token)
+                // localStorage.setItem("gamer_id", res.gamer.id) // let's comment this out until we figure out where to get the gamer_id from
+                navigate("/")
+            }
+            else {
+                invalidDialog.current.showModal()
+            }
+        })
     }
 
     return (
@@ -36,10 +38,10 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Level Up</h1>
+                    <h1>Sending Stones</h1>
                     <h2>Please sign in</h2>
                     <fieldset>
-                        <label htmlFor="inputUsername"> Username address </label>
+                        <label htmlFor="inputUsername"> Username </label>
                         <input ref={username} type="username" id="username" className="form-control" placeholder="Username address" required autoFocus />
                     </fieldset>
                     <fieldset>

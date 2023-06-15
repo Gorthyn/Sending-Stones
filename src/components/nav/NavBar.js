@@ -1,25 +1,32 @@
 import { Link, useNavigate } from "react-router-dom"
 import "./NavBar.css"
+import SSLogo from "../../images/SSLogo.png"
 
 export const NavBar = () => {
     const navigate = useNavigate()
     return (
         <ul className="navbar">
-            <li className="navbar__item">
-                Navigation link
+            <Link to="/" className="navbar__logo">
+                <img src={SSLogo}></img>
+            </Link>
+            <li className="navbar__item" onClick={() => navigate("/diceroller")}>
+                Dice
             </li>
             <li className="navbar__item">
-                Navigation link
+                Trackers
             </li>
             <li className="navbar__item">
-                Navigation link
+                Invitations
+            </li>
+            <li className="navbar__item">
+                Messages
             </li>
             {
-                (localStorage.getItem("lu_token") !== null) ?
+                (localStorage.getItem("ss_token") !== null) ?
                     <li className="nav-item">
                         <button className="nav-link fakeLink"
                             onClick={() => {
-                                localStorage.removeItem("lu_token")
+                                localStorage.removeItem("ss_token")
                                 navigate('/login')
                             }}
                         >Logout</button>
