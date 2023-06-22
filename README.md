@@ -26,13 +26,14 @@ npm build: Builds the app for production to the build folder. It correctly bundl
 npm eject: Removes the single build dependency from your project and copies all the configuration files and transitive dependencies (webpack, Babel, ESLint, etc.) right into your project.
 
 Learning More
-This project was bootstrapped with Create React App. To learn more, check out the Create React App documentation or the React documentation.
+This project was bootstrapped with Create React App https://github.com/facebook/create-react-app. To learn more, check out the Create React App documentation https://facebook.github.io/create-react-app/docs/getting-started or the React documentation https://reactjs.org/.
 
 Further Reading
-Code Splitting
-Analyzing the Bundle Size
-Making a Progressive Web App
-Advanced Configuration
-Deployment
-Troubleshooting: npm build fails to minify
+Code Splitting https://facebook.github.io/create-react-app/docs/code-splitting
+Analyzing the Bundle Size https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Making a Progressive Web App https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Advanced Configuration https://facebook.github.io/create-react-app/docs/advanced-configuration
+Deployment https://facebook.github.io/create-react-app/docs/deployment
+Troubleshooting: npm build fails to minify https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
 NOTE: Ejecting is a one-way operation. Once you eject, you can’t go back! It's not necessary to use eject, but if you ever feel the need to customize your build tool and configuration, it's an option.
