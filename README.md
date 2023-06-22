@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sending Stones
+Sending Stones is a React-based note-taking and game management app designed for avid tabletop gamers. It allows users to seamlessly manage their games, topics, and posts, as well as offering simple, yet effective dice rolling and combat tracking functionalities.
 
-## Available Scripts
+Features
+Games, Topics, and Posts
+At the core of Sending Stones, users can create, modify, read, and delete games - each game serving as a container for various topics. Topics can also be created, modified, read, and deleted within these games. Users can then further delve into detail by creating posts within topics. Each game, topic, and post can be fine-tuned to fit the user's specific needs, ensuring an organized and efficient gameplay experience.
 
+Note Commenting
+To add a more granular level of detail to your games, Sending Stones allows users to comment on posts with their notes. These notes can also be created, modified, read, and deleted, allowing users to easily manage their thought process and ensure no detail is lost or forgotten.
+
+Dice Roller
+Sending Stones comes with a built-in dice roller that allows users to roll any number and type of dice, ranging from the simple d4 to the mighty d100. This tool simplifies the gaming process, minimizing the need for physical dice and facilitating quick and effortless dice rolls.
+
+Combat Tracker
+Keeping track of combat in tabletop games can be a cumbersome process. Sending Stones addresses this with a straightforward and effective combat tracker. Users can easily add or remove player characters and enemies from the tracker, keeping everyone on top of the game's progress.
+
+Available Scripts
 In the project directory, you can run:
 
-### `npm start`
+npm start: Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
+npm test: Launches the test runner in the interactive watch mode.
+npm build: Builds the app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+npm eject: Removes the single build dependency from your project and copies all the configuration files and transitive dependencies (webpack, Babel, ESLint, etc.) right into your project.
+Learning More
+This project was bootstrapped with Create React App. To learn more, check out the Create React App documentation or the React documentation.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Further Reading
+Code Splitting
+Analyzing the Bundle Size
+Making a Progressive Web App
+Advanced Configuration
+Deployment
+Troubleshooting: npm build fails to minify
+NOTE: Ejecting is a one-way operation. Once you eject, you can’t go back! It's not necessary to use eject, but if you ever feel the need to customize your build tool and configuration, it's an option.
